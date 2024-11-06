@@ -534,61 +534,432 @@
         }
       }
       </style>
-<!-- <div class="relative w-screen h-[90vh] overflow-hidden">
-    <img src="bg.png" alt="Full Width Test Image" class="w-full h-full object-cover">
-    <div class="absolute top-16 left-1/2 transform -translate-x-1/2 text-center text-green-600 z-10 px-4">
-        <h1 class="text-4xl md:text-6xl mb-1 pb-4">We Handle Everything For You!</h1>
-        <hr class="w-3/4 mx-auto border-1 border-gray-400">
-        <p class="text-black text-lg mt-8 mx-2">Streamline Designs offers custom professional landscaping services in the Greater Dallas Fort Worth Metroplex.</p>
-        <div class="mt-12">
-            <span class="text-green-600 font-bold text-6xl md:text-8xl">30</span><br>
-        </div>
-        <div class="mt-4">
-            <span class="text-green-600 font-bold text-4xl md:text-6xl">Plus Years</span>
-        </div>
-        <hr class="mt-4 w-2/4 mx-auto border-1 border-gray-400">
-        
-        <div class="mt-8">
-            <h2 class="text-black font-bold text-xl md:text-2xl">Experience</h2>
-            <p class="text-black text-lg mt-2 mx-2 mb-8">Service crews are hired for year-round service.</p>
-            <h2 class="text-black font-bold text-lg md:text-xl">In The DFW Metroplex</h2>
-            <p class="text-black text-lg mt-2 mx-2">Creating professional landscaping services and outdoor needs.</p>
-        </div>
-    </div>
-    <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-30 z-5"></div>
-</div> -->
-<!-- <div class="relative w-screen h-[90vh] md:h-[100vh] overflow-hidden">
-    <img src="bg.png" alt="Full Width Test Image" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-green-600 z-10 px-4">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl mb-1 pb-4">We Handle Everything For You!</h1>
-        <hr class="w-3/4 mx-auto border-1 border-gray-400">
-        <p class="text-black text-lg sm:text-xl mt-8 mx-2">Streamline Designs offers custom professional landscaping services in the Greater Dallas Fort Worth Metroplex.</p>
-        <div class="mt-12">
+
+
+    <section id="landing-section" class="relative w-screen h-auto overflow-hidden">
+    <img id="landing-bg-image" src="bg.png" alt="Full Width Test Image" class="w-full h-full object-cover object-left">
+    <div id="landing-content" class="absolute inset-0 flex flex-col justify-center items-center text-center text-green-600 z-10 px-4">
+        <h1 id="landing-heading" class="text-4xl sm:text-5xl md:text-6xl mb-1 pb-4">We Handle Everything For You!</h1>
+        <hr id="landing-divider-top" class="w-3/4 mx-auto border-1 border-gray-400">
+        <p id="landing-description" class="text-black text-lg sm:text-xl mt-8 mx-2">Streamline Designs offers custom professional landscaping services in the Greater Dallas Fort Worth Metroplex.</p>
+        <div id="landing-years" class="mt-12">
             <span class="text-green-600 font-bold text-6xl sm:text-7xl md:text-8xl">30</span><br>
         </div>
-        <div class="mt-4">
+        <div id="landing-years-text" class="mt-4">
             <span class="text-green-600 font-bold text-4xl sm:text-5xl md:text-6xl">Plus Years</span>
         </div>
-        <hr class="mt-4 w-2/4 mx-auto border-1 border-gray-400">
+        <hr id="landing-divider-bottom" class="mt-4 w-2/4 mx-auto border-1 border-gray-400">
         
-        <div class="mt-8">
-            <h2 class="text-black font-bold text-xl sm:text-2xl md:text-2xl">Experience</h2>
-            <p class="text-black text-lg sm:text-xl mt-2 mx-2 mb-2">Service crews are hired for year-round service.</p>
-            <h2 class="text-black font-bold text-lg sm:text-xl md:text-xl">In The DFW Metroplex</h2>
-            <p class="text-black text-lg sm:text-xl mt-2 mx-2">Creating professional landscaping services and outdoor needs.</p>
+        <div id="landing-experience" class="mt-8">
+            <h2 id="landing-experience-heading" class="text-black font-bold text-xl sm:text-2xl md:text-2xl">Experience</h2>
+            <p id="landing-experience-text" class="text-black text-lg sm:text-xl mt-2 mx-2 mb-2">Service crews are hired for year-round service.</p>
+            <h2 id="landing-location-heading" class="text-black font-bold text-lg sm:text-xl md:text-xl">In The DFW Metroplex</h2>
+            <p id="landing-location-text" class="text-black text-lg sm:text-xl mt-2 mx-2">Creating professional landscaping services and outdoor needs.</p>
         </div>
     </div>
-    <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-30 z-5"></div>
-</div>
+    <div id="landing-overlay" class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-30 z-5"></div>
+</section>
 
 <style>
-@media (max-width: 640px) {
-    .relative {
-        height: 100vh; 
+
+@media (min-width: 941px) {
+    #landing-section {
+        height: auto;
+    }
+    #landing-content {
+        padding: 20px;
     }
 }
-</style> -->
 
+
+@media (max-width: 941px) {
+    #landing-section {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    #landing-heading {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    #landing-description {
+        font-size: 0.875rem;
+    }
+    #landing-years, #landing-years-text {
+        margin-top: 16px;
+    }
+}
+
+
+@media (max-width: 739px) {
+    #landing-section {
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 10px; 
+    }
+    #landing-heading {
+        font-size: 2rem;
+    }
+    #landing-description {
+        font-size: 0.75rem;
+    }
+    #landing-years, #landing-years-text {
+        margin-top: 12px;
+    }
+    #landing-years span {
+        font-size: 3rem;
+    }
+    #landing-years-text span {
+        font-size: 2rem;
+    }
+    #landing-experience-heading {
+        font-size: 1rem;
+    }
+    #landing-location-heading {
+        font-size: 1rem;
+    }
+    #landing-experience-text, #landing-location-text {
+        font-size: 0.875rem;
+    }
+}
+
+
+@media (max-width: 610px) {
+    #landing-section {
+        height: 100vh;
+        padding-top: 5px;
+        padding-bottom: 5px; 
+    }
+
+    #landing-content {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;     
+    }
+
+    #landing-heading {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+
+    #landing-description {
+        font-size: 0.75rem;
+    }
+
+    #landing-years, #landing-years-text {
+        margin-top: 8px;
+    }
+
+    #landing-years span {
+        font-size: 2.5rem;
+    }
+
+    #landing-years-text span {
+        font-size: 1.5rem;
+    }
+
+    #landing-experience-heading {
+        font-size: 1rem;
+    }
+
+    #landing-location-heading {
+        font-size: 1rem;
+    }
+
+    #landing-experience-text, #landing-location-text {
+        font-size: 0.75rem;
+    }
+
+    #landing-bg-image {
+        object-fit: cover;
+        object-position: left;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #landing-section {
+        height: 100vh;
+        padding-top: 5px;
+        padding-bottom: 2px; 
+    }
+
+    #landing-heading {
+        font-size: 1.75rem;
+        margin-bottom: 6px;
+    }
+
+    #landing-description {
+        font-size: 0.625rem;
+    }
+
+    #landing-years, #landing-years-text {
+        margin-top: 6px;
+    }
+
+    #landing-years span {
+        font-size: 2rem;
+    }
+
+    #landing-years-text span {
+        font-size: 1.25rem;
+    }
+
+    #landing-experience-heading {
+        font-size: 1rem;
+    }
+
+    #landing-location-heading {
+        font-size: 1rem;
+    }
+
+    #landing-experience-text, #landing-location-text {
+        font-size: 0.625rem;
+    }
+
+    #landing-bg-image {
+        object-fit: cover;
+        object-position: left;
+    }
+}
+</style>
+
+<style>
+    
+    .bg-lightgray {
+      background-color: #f9f9f7;
+    }
+  
+    #image-modal-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+  
+    .image-modal-image-container {
+      max-width: 90%;
+      max-height: 80vh;
+      margin: auto;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+  
+    
+    #image-modal-zoom-controls {
+      position: absolute;
+      top: 4%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+      z-index: 999;
+    }
+  
+    #image-modal-zoom-controls button {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  
+   
+    .image-modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 10000;
+    }
+  
+   
+    .image-modal-arrow-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 12px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      cursor: pointer;
+      z-index: 10001;
+    }
+  
+    .image-modal-arrow-left {
+      left: 16px;
+      transform: rotate(180deg);
+    }
+  
+    .image-modal-arrow-right {
+      right: 16px;
+    }
+  </style>
+  
+  <!-- Gallery Section -->
+  <div id="image-modal-gallery-section" class="py-12">
+    <div class="text-center mb-8">
+      <h1 class="text-2xl font-bold text-green-600">Recent Projects</h1>
+    </div>
+  
+    <div id="image-modal-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4">
+      <!-- Images will be dynamically loaded here -->
+    </div>
+  </div>
+  
+  <!-- Image Modal Section -->
+  <div id="image-modal-container" class="flex items-center justify-center">
+    <button id="image-modal-close-btn" class="image-modal-close-btn">
+      <img src="https://img.icons8.com/?size=100&id=7703&format=png&color=FFFFFF" class="w-8 h-8" alt="Close">
+    </button>
+  
+    <!-- Zoom Controls -->
+    <div id="image-modal-zoom-controls" class="space-x-4 hidden">
+      <button id="image-modal-zoomInBtn" class="text-white bg-black bg-opacity-50 rounded-full p-3 cursor-pointer">
+        <img src="https://img.icons8.com/?size=100&id=CK0gy7bke7NT&format=png&color=FFFFFF" class="w-8 h-8" alt="Zoom In">
+      </button>
+      <button id="image-modal-zoomOutBtn" class="text-white bg-black bg-opacity-50 rounded-full p-3 cursor-pointer">
+        <img src="https://img.icons8.com/?size=100&id=s4gg8ZRiclIf&format=png&color=FFFFFF" class="w-8 h-8 rotate-180" alt="Zoom Out">
+      </button>
+    </div>
+  
+    <!-- Image Display -->
+    <div class="relative max-w-5xl mx-auto p-4 flex flex-col items-center">
+      <img id="image-modal-image" src="" class="image-modal-image-container opacity-0">
+    </div>
+  
+    <!-- Modal Navigation Arrows -->
+    <button id="image-modal-prevBtn" class="image-modal-arrow-button image-modal-arrow-left">
+      <img src="https://img.icons8.com/?size=100&id=SgKf9u814Pci&format=png&color=FFFFFF" class="w-8 h-8" alt="Left Arrow">
+    </button>
+    <button id="image-modal-nextBtn" class="image-modal-arrow-button image-modal-arrow-right">
+      <img src="https://img.icons8.com/?size=100&id=SgKf9u814Pci&format=png&color=FFFFFF" class="w-8 h-8" alt="Right Arrow">
+    </button>
+  </div>
+  
+  <script>
+    (function() {
+    
+      const imageModalImages = [
+        'image1.jpg', 'image2.jpg', 'image3.jpg',
+        'image4.jpg', 'image5.jpg', 'image6.jpg',
+        'image7.jpg', 'image8.jpg', 'image9.jpg'
+      ];
+  
+      const galleryElement = document.getElementById('image-modal-gallery');
+      imageModalImages.forEach((src, index) => {
+        const imgElement = document.createElement('img');
+        imgElement.src = src;
+        imgElement.classList.add('cursor-pointer', 'w-full', 'h-48', 'object-cover', 'rounded-md');
+        imgElement.onclick = () => openImageModal(index);
+        galleryElement.appendChild(imgElement);
+      });
+  
+      let currentImageIndex = 0;
+      let currentZoomLevel = 1;
+  
+      function openImageModal(index) {
+        currentImageIndex = index;
+        currentZoomLevel = 1; // Reset zoom level
+        const modal = document.getElementById('image-modal-container');
+        const modalImage = document.getElementById('image-modal-image');
+        const zoomControls = document.getElementById('image-modal-zoom-controls');
+  
+        modalImage.src = imageModalImages[currentImageIndex];
+        modal.style.display = 'flex';
+        zoomControls.classList.remove('hidden');
+  
+        modalImage.onload = () => {
+          modalImage.classList.remove('opacity-0');
+          modalImage.classList.add('opacity-100');
+        };
+  
+        document.addEventListener('keydown', handleKeyboardNavigation);
+      }
+  
+      function closeImageModal() {
+        const modal = document.getElementById('image-modal-container');
+        const modalImage = document.getElementById('image-modal-image');
+        const zoomControls = document.getElementById('image-modal-zoom-controls');
+  
+        modalImage.classList.remove('opacity-100');
+        modalImage.classList.add('opacity-0');
+  
+        setTimeout(() => {
+          modal.style.display = 'none';
+          zoomControls.classList.add('hidden');
+        }, 300);
+  
+        document.removeEventListener('keydown', handleKeyboardNavigation);
+      }
+  
+      function handleKeyboardNavigation(event) {
+        if (event.key === 'Escape') {
+          closeImageModal();
+        } else if (event.key === 'ArrowLeft') {
+          goToPreviousImage();
+        } else if (event.key === 'ArrowRight') {
+          goToNextImage();
+        }
+      }
+  
+      function goToPreviousImage() {
+        currentImageIndex = (currentImageIndex - 1 + imageModalImages.length) % imageModalImages.length;
+        updateImageModalImage();
+      }
+  
+      function goToNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % imageModalImages.length;
+        updateImageModalImage();
+      }
+  
+      function updateImageModalImage() {
+        const modalImage = document.getElementById('image-modal-image');
+        modalImage.classList.add('opacity-0');
+        setTimeout(() => {
+          modalImage.src = imageModalImages[currentImageIndex];
+          modalImage.classList.remove('opacity-0');
+          modalImage.classList.add('opacity-100');
+        }, 50);
+      }
+  
+      function zoomInImage() {
+        currentZoomLevel += 0.1;
+        const modalImage = document.getElementById('image-modal-image');
+        modalImage.style.transform = `scale(${currentZoomLevel})`;
+      }
+  
+      function zoomOutImage() {
+        if (currentZoomLevel > 1) {
+          currentZoomLevel -= 0.1;
+          const modalImage = document.getElementById('image-modal-image');
+          modalImage.style.transform = `scale(${currentZoomLevel})`;
+        }
+      }
+  
+      
+      document.getElementById('image-modal-container').onclick = (event) => {
+        if (event.target.id === 'image-modal-container') {
+          closeImageModal();
+        }
+      };
+  
+      
+      document.getElementById('image-modal-zoomInBtn').onclick = zoomInImage;
+      document.getElementById('image-modal-zoomOutBtn').onclick = zoomOutImage;
+  
+      
+      document.getElementById('image-modal-prevBtn').onclick = goToPreviousImage;
+      document.getElementById('image-modal-nextBtn').onclick = goToNextImage;
+  
+      
+      document.getElementById('image-modal-close-btn').onclick = closeImageModal;
+    })();
+  </script>
 
 
 
