@@ -962,6 +962,172 @@
   </script>
 
 
+<!-- Why Choose Us Section -->
+<section class="content-wrapper max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg  transition-all duration-300 hover:shadow-2xl hover:scale-105" style="margin-top: 2.5rem;">
+    <h2 class="header-title text-3xl font-bold mb-4 text-left">Why choose us?</h2>
+    <div class="content-container flex flex-col lg:flex-row gap-4">
+        <!-- Left Column -->
+        <div class="content-text flex-1 pr-6 text-left">
+            <p class="text-paragraph text-gray-700 mb-4 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum neque, a fermentum
+                magna tincidunt vel. Praesent pharetra, lorem id sollicitudin finibus, erat massa luctus libero, ac volutpat
+                nunc erat et nunc. Proin in tincidunt urna, non semper nunc.
+            </p>
+            <p class="text-paragraph text-gray-700 mb-4 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel magna vitae urna elementum elementum
+                non eget lorem. Integer ac nibh ut libero pulvinar aliquet. Etiam sit amet urna sed augue pulvinar suscipit.
+            </p>
+        </div>
+        <!-- Right Column -->
+        <div class="image-container flex-1">
+            <img src="wuc.jpg" alt="Placeholder Image" class="rounded-lg shadow-lg w-full h-auto max-w-full object-cover"> 
+        </div>
+    </div>
+</section>
+
+<!-- Combined  Section -->
+<section class="combined-section max-w-5xl mx-auto p-0 bg-white shadow-lg rounded-lg mt-8 mb-8 transition-all duration-300 hover:shadow-2xl hover:scale-105">
+    <div class="flex flex-col gap-4 md:gap-0 md:flex-col lg:flex-row">
+        <!-- Green Section (Craftsmanship) -->
+        <div class="green-section bg-green-800 text-white text-center p-6 rounded-lg md:rounded-lg transition-all duration-300 hover:bg-green-700">
+            <h3 class="green-title text-xl font-semibold mb-3">Craftsmanship</h3>
+            <p class="green-text text-sm text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nisl eu justo euismod, eget volutpat
+                mi facilisis. Curabitur tincidunt, quam nec tincidunt efficitur, sapien felis volutpat urna, id facilisis
+                ligula libero ac elit.
+            </p>
+            <button class="learn-more-btn mt-4 px-4 py-2 bg-white text-green-800 font-semibold rounded hover:bg-gray-200">
+                How We Work
+            </button>
+        </div>
+
+        <!-- White Section (Text Split into Two Columns) -->
+        <div class="white-section p-6 bg-white rounded-lg md:rounded-lg flex flex-col md:flex-row gap-4">
+            <!-- Left Column -->
+            <div class="flex-1 text-left">
+                <h3 class="section-title text-xl font-semibold text-gray-800 mb-3">Greater DFW Metroplex</h3>
+                <p class="section-text text-sm text-gray-700 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nisl eu justo euismod, eget
+                    volutpat mi facilisis. Curabitur tincidunt, quam nec tincidunt efficitur, sapien felis volutpat urna,
+                    id facilisis ligula libero ac elit.
+                </p>
+                <p class="section-text text-sm text-gray-700 mt-4 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim massa id lorem ultricies
+                    feugiat. Sed vel est vitae augue dignissim tincidunt non in tortor.
+                </p>
+            </div>
+            <!-- Right Column -->
+            <div class="flex-1 text-left">
+                <h3 class="section-title text-xl font-semibold text-gray-800 mb-3">Our Founder</h3>
+                <p class="section-text text-sm text-gray-700 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id ligula a metus porttitor
+                    ultrices. Vestibulum eu libero in nulla bibendum cursus. Nulla facilisi. Praesent dignissim urna et
+                    felis vestibulum, ac varius arcu vehicula.
+                </p>
+                <p class="section-text text-sm text-gray-700 mt-4 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu est non nunc sollicitudin dignissim.
+                    Mauris vel efficitur eros. Suspendisse potenti.
+                </p>
+                <p class="founder-name text-sm font-semibold text-gray-700 mt-4">- Spencer Perkins</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .content-wrapper,
+    .combined-section {
+        max-width: 5xl;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    .green-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1.5rem;
+        transition: background-color 0.3s ease;
+        
+    }
+
+    .white-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .content-wrapper:hover,
+    .combined-section:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 643px) {
+        .green-section,
+        .white-section {
+            width: 100%;
+            padding: 2rem 1rem;
+            border-radius: 1rem;
+        }
+
+        .combined-section {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    }
+
+    @media (min-width: 643px) and (max-width: 835px) {
+        .combined-section {
+            flex-direction: column;
+        }
+
+        .green-section {
+            width: 100%;
+            padding: 2rem 1.5rem;
+        }
+
+        .white-section {
+            width: 100%;
+            padding: 2rem 1.5rem;
+        }
+
+        .content-container {
+            gap: 2rem;
+        }
+
+        .white-section .flex-1,
+        .green-section {
+            text-align: center;
+        }
+
+        .white-section h3,
+        .green-section h3 {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .green-section {
+            width: 100%;
+            padding: 2rem 1.5rem;
+        }
+
+        .white-section {
+            width: 100%;
+            padding: 2rem 1.5rem;
+        }
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .combined-section {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+</style>
 
 
 
