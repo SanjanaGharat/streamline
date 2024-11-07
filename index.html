@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
     <style>
+                body {
+    overflow-x: hidden;
+}
         @media (max-width: 480px) {
             .top-bar-icons {
                 align-items: center; 
@@ -962,176 +965,176 @@
   </script>
 
 
-<!-- Why Choose Us Section -->
-<section class="content-wrapper max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg  transition-all duration-300 hover:shadow-2xl hover:scale-105" style="margin-top: 2.5rem;">
-    <h2 class="header-title text-3xl font-bold mb-4 text-left">Why choose us?</h2>
-    <div class="content-container flex flex-col lg:flex-row gap-4">
-        <!-- Left Column -->
-        <div class="content-text flex-1 pr-6 text-left">
-            <p class="text-paragraph text-gray-700 mb-4 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula fermentum neque, a fermentum
-                magna tincidunt vel. Praesent pharetra, lorem id sollicitudin finibus, erat massa luctus libero, ac volutpat
-                nunc erat et nunc. Proin in tincidunt urna, non semper nunc.
-            </p>
-            <p class="text-paragraph text-gray-700 mb-4 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel magna vitae urna elementum elementum
-                non eget lorem. Integer ac nibh ut libero pulvinar aliquet. Etiam sit amet urna sed augue pulvinar suscipit.
-            </p>
-        </div>
-        <!-- Right Column -->
-        <div class="image-container flex-1">
-            <img src="wuc.jpg" alt="Placeholder Image" class="rounded-lg shadow-lg w-full h-auto max-w-full object-cover"> 
-        </div>
+     <!-- Why Choose Us Section -->
+<section class="max-w-6xl mx-auto mt-16 mb-12 px-6">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row group hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+  
+      <!-- Left Column -->
+      <div class="p-8 flex-1 relative bg-cover bg-center flex items-center justify-center order-2 md:order-1 why-choose-us-left" style="background-image: url('https://images.pexels.com/photos/4587828/pexels-photo-4587828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); min-height: 350px;">
+          <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+          <div class="relative z-10 text-center text-black">
+              <h2 class="text-3xl font-bold mb-4 brand-green">Why choose us?</h2>
+              <p class="font-semibold mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Integer id libero non purus convallis tincidunt. Nam vel velit id lorem vestibulum consequat.</p>
+              <p class="mb-4 text-justify">Nulla facilisi. Vivamus sit amet eros sed leo vehicula tincidunt. Ut varius ipsum non lorem maximus fermentum. Aenean nec magna auctor, venenatis erat ut, feugiat orci.</p>
+              <p class="mb-4 text-justify">Donec ac arcu in justo vestibulum ullamcorper. Maecenas a orci felis. Curabitur id metus urna. Ut aliquam libero vel elit fermentum, nec fermentum erat volutpat.</p>
+          </div>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="relative bg-cover bg-center flex-1 min-h-[350px] md:min-h-[550px] order-1 md:order-2 why-choose-us-right" style="background-image: url('https://images.pexels.com/photos/5486155/pexels-photo-5486155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+          <div class="absolute inset-0 bg-black bg-opacity-70"></div> 
+          <div class="absolute inset-0 flex items-center justify-center text-white">
+              <h3 class="text-3xl font-bold text-center">STREAMLINE LANDSCAPE</h3>
+          </div>
+      </div>
+  
     </div>
-</section>
+  </section>
+  
+  <hr class="my-8 border-t-1 border-gray-300 mx-72 sm:mx-48 md:mx-32 lg:mx-72">
 
-<!-- Combined  Section -->
-<section class="combined-section max-w-5xl mx-auto p-0 bg-white shadow-lg rounded-lg mt-8 mb-8 transition-all duration-300 hover:shadow-2xl hover:scale-105">
-    <div class="flex flex-col gap-4 md:gap-0 md:flex-col lg:flex-row">
-        <!-- Green Section (Craftsmanship) -->
-        <div class="green-section bg-green-800 text-white text-center p-6 rounded-lg md:rounded-lg transition-all duration-300 hover:bg-green-700">
-            <h3 class="green-title text-xl font-semibold mb-3">Craftsmanship</h3>
-            <p class="green-text text-sm text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nisl eu justo euismod, eget volutpat
-                mi facilisis. Curabitur tincidunt, quam nec tincidunt efficitur, sapien felis volutpat urna, id facilisis
-                ligula libero ac elit.
-            </p>
-            <button class="learn-more-btn mt-4 px-4 py-2 bg-white text-green-800 font-semibold rounded hover:bg-gray-200">
+  <div class="container mx-auto p-5">
+    <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden max-w-6xl mx-auto">
+        <!-- Craftsmanship Section (Left Section with Hover) -->
+        <div id="craftsmanship-section" class="w-full md:w-2/5 p-6 text-white">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 ">Craftsmanship</h2>
+            <p class="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat ex at nisi suscipit, sit amet viverra lectus malesuada. Nulla facilisi. Curabitur blandit risus vel facilisis volutpat. Cras a leo augue. Maecenas in arcu arcu. Donec consequat, arcu nec fermentum dapibus, elit est tristique nisi, sit amet malesuada erat nisl sit amet turpis.</p>
+            <button id="craftsmanship" class="bg-white text-sm md:text-base inline-block px-4 py-2 rounded border-2 border-[var(--brand-color)] hover:bg-[var(--brand-dark-green)] hover:text-white transition-colors duration-300 ease-in-out" onclick="window.location.href='/about-us.html';">
                 How We Work
             </button>
+            
+            
         </div>
 
-        <!-- White Section (Text Split into Two Columns) -->
-        <div class="white-section p-6 bg-white rounded-lg md:rounded-lg flex flex-col md:flex-row gap-4">
-            <!-- Left Column -->
-            <div class="flex-1 text-left">
-                <h3 class="section-title text-xl font-semibold text-gray-800 mb-3">Greater DFW Metroplex</h3>
-                <p class="section-text text-sm text-gray-700 text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum nisl eu justo euismod, eget
-                    volutpat mi facilisis. Curabitur tincidunt, quam nec tincidunt efficitur, sapien felis volutpat urna,
-                    id facilisis ligula libero ac elit.
-                </p>
-                <p class="section-text text-sm text-gray-700 mt-4 text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim massa id lorem ultricies
-                    feugiat. Sed vel est vitae augue dignissim tincidunt non in tortor.
-                </p>
+        <!-- Info Section (Right Section without Hover) -->
+        <div id="info-section" class="w-full md:w-3/5 p-6">
+            <div id="dfw-metroplex" class="flex-1">
+                <h2 class="text-2xl md:text-2xl font-bold mb-4 brand-green">Greater DFW Metroplex</h2>
+                <p class="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                <p class="text-sm md:text-base">Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             </div>
-            <!-- Right Column -->
-            <div class="flex-1 text-left">
-                <h3 class="section-title text-xl font-semibold text-gray-800 mb-3">Our Founder</h3>
-                <p class="section-text text-sm text-gray-700 text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id ligula a metus porttitor
-                    ultrices. Vestibulum eu libero in nulla bibendum cursus. Nulla facilisi. Praesent dignissim urna et
-                    felis vestibulum, ac varius arcu vehicula.
-                </p>
-                <p class="section-text text-sm text-gray-700 mt-4 text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu est non nunc sollicitudin dignissim.
-                    Mauris vel efficitur eros. Suspendisse potenti.
-                </p>
-                <p class="founder-name text-sm font-semibold text-gray-700 mt-4">- Spencer Perkins</p>
+            <div id="our-founder" class="flex-1">
+                <h2 class="text-2xl md:text-2xl font-bold mb-4 brand-green">Our Founder</h2>
+                <p class="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+                <p class="text-sm md:text-base">Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <style>
-    .content-wrapper,
-    .combined-section {
-        max-width: 5xl;
-        margin: 0 auto;
-        padding: 1.5rem;
-    }
+        :root {
+            --brand-color: #2f855a;
+            --brand-dark-green: #22543d;
+            --offwhite: #f8f8f8; 
+        }
 
-    .green-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 1.5rem;
-        transition: background-color 0.3s ease;
+        .brand-green {
+            color: var(--brand-color);
+        }
+
+        .brand-background {
+            background-color: var(--brand-color);
+        }
+
+        .brand-border {
+            border-color: var(--brand-color);
+        }
+       
         
+    #craftsmanship-section {
+        transition: all 0.3s ease;
     }
 
-    .white-section {
-        padding: 3rem 1.5rem;
+  
+    #craftsmanship-section:hover {
+        background-color: var(--brand-dark-green);
     }
 
-    .content-wrapper:hover,
-    .combined-section:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    #craftsmanship-section:hover .brand-green {
+        color: var(--offwhite);
     }
 
-    @media (max-width: 643px) {
-        .green-section,
-        .white-section {
-            width: 100%;
-            padding: 2rem 1rem;
-            border-radius: 1rem;
+   
+.why-choose-us:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+        @media (min-width: 1024px) {
+            .why-choose-us {
+                
+                width: 2000px;
+                height: 500px;
+                padding: 1rem;
+            }
         }
 
-        .combined-section {
+        @media (min-width: 1024px) {
+            #info-section {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #dfw-metroplex, #our-founder {
+                flex: 1;
+                padding: 0.75rem;
+            }
+
+            #dfw-metroplex h2, #our-founder h2 {
+                color: var(--brand-color); 
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            #info-section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #dfw-metroplex {
+                order: -1;
+            }
+
+            #dfw-metroplex, #our-founder {
+                flex: none;
+            }
+
+            #dfw-metroplex h2, #our-founder h2 {
+                font-size: 1.5rem; 
+            }
+
+            #craftsmanship-section p, #dfw-metroplex p, #our-founder p {
+                font-size: 0.75rem;
+            }
+
+            #craftsmanship-section button {
+                font-size: 0.75rem;
+            }
+
+            #dfw-metroplex, #our-founder {
+                min-height: auto;
+            }
+        }
+
+        #craftsmanship-section {
+            display: flex;
             flex-direction: column;
-            padding: 1rem;
-        }
-    }
-
-    @media (min-width: 643px) and (max-width: 835px) {
-        .combined-section {
-            flex-direction: column;
-        }
-
-        .green-section {
-            width: 100%;
-            padding: 2rem 1.5rem;
-        }
-
-        .white-section {
-            width: 100%;
-            padding: 2rem 1.5rem;
-        }
-
-        .content-container {
-            gap: 2rem;
-        }
-
-        .white-section .flex-1,
-        .green-section {
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            background-color: var(--brand-color);
         }
 
-        .white-section h3,
-        .green-section h3 {
-            text-align: center;
-        }
-    }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .green-section {
-            width: 100%;
-            padding: 2rem 1.5rem;
+        #craftsmanship-section p, #dfw-metroplex p, #our-founder p {
+            text-align: justify;
         }
 
-        .white-section {
-            width: 100%;
-            padding: 2rem 1.5rem;
+        #craftsmanship-section button {
+            background-color: var(--brand-dark-green);
         }
-    }
-
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .combined-section {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-</style>
-
-
-
-
+    </style>
 
 
 
